@@ -1,0 +1,127 @@
+ :root {
+     --body: rgb(226, 221, 221);
+     --box: rgb(245, 239, 239);
+     --main: rgb(69, 74, 82); 
+ }
+ 
+ 
+ body {
+     background-color: var(--body);
+     font: 0.75em Arial, Helvetica, sans-serif;
+ }
+
+ /* h1 {
+     color:rgb(27, 51, 131); 
+ } */
+
+ h1 {
+     color: var(--main);
+ }
+
+ h2 {
+     color: var(--main);
+ }
+
+ .box-1 {
+     background-color: var(--box);
+     border: var(--main) solid;
+     padding: 10px;
+     color:  var(--main);
+     width: 720px;
+     margin: auto;
+ }
+ p {
+     font-size: 16px;
+ }
+
+ .box-2 {
+    display: flex;
+ }
+
+ .contact {
+	background: var(--body);
+	color: var(--main);
+	display: block;
+	text-decoration: none;
+	padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+	margin-bottom: 1px;
+	letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.paper-li {
+    /* background: var(--body);
+	color: var(--main); */
+	display: inline-block;
+	/* text-decoration: none;
+	padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+	margin-bottom: 1px;
+	letter-spacing: 1px;
+    white-space: nowrap; */
+}
+
+.paper-link {
+    background: var(--box);
+	color: var(--main);
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+	margin-bottom: 1px;
+	letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+ a:hover {
+	background: #98afbe;
+	color: #61727a;
+}
+
+ ul {
+    list-style: none;
+    padding-left: 0;
+ }
+ 
+
+
+ .image {
+     width: 75%;
+     display: block;
+     border: solid var(--main);
+     border-radius: 10px;
+ }
+
+ .image-research {
+    width: 100%;
+    /* display: block;
+    margin: auto; */
+    /* border: solid black; */
+}
+
+.box-2-element {
+  
+}
+
+.research-text {
+    /* white-space: nowrap; */
+    /* border: solid black; */
+    word-wrap: normal;
+    margin-left: 10px;
+}
+
+.research-box {
+
+    background-color: var(--body);
+    border: solid var(--main);
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 5px;
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    
+}
