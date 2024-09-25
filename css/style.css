@@ -1,13 +1,14 @@
  :root {
-     --body: rgb(226, 221, 221);
-     --box: rgb(245, 239, 239);
-     --main: rgb(69, 74, 82); 
+     --box: rgb(175, 158, 238);
+     --body: rgb(57, 24, 98);
+     --main: rgb(234, 230, 201); 
  }
  
  
  body {
      background-color: var(--body);
-     font: 0.75em Arial, Helvetica, sans-serif;
+     font-family: 'Courier New', monospace;
+
  }
 
  /* h1 {
@@ -34,9 +35,9 @@
      font-size: 16px;
  }
 
- .box-2 {
+.box-2 {
     display: flex;
- }
+}
 
  .contact {
 	background: var(--body);
@@ -46,8 +47,10 @@
 	padding-left: 10px;
     padding-right: 10px;
     line-height: 25px;
-	margin-bottom: 1px;
-	letter-spacing: 1px;
+    margin-bottom: 1px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    letter-spacing: 1px;
     white-space: nowrap;
 }
 
@@ -78,8 +81,8 @@
 }
 
  a:hover {
-	background: #98afbe;
-	color: #61727a;
+	background: rgb(57, 24, 98);
+	color: rgb(234, 230, 201);
 }
 
  ul {
@@ -89,14 +92,14 @@
  
 
 
- .image {
-    width: 75%;
-    display: block;
+.image {
+    width: 100%;
     border: solid var(--main);
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
- }
+    margin-top: 10%;
+    /* margin-right: 10; */
+   
+}
 
  .image-research {
     width: 100%;
@@ -104,9 +107,12 @@
     margin: auto; */
     /* border: solid black; */
 }
-
 .box-2-element {
+    flex: 1;
+    padding: 2.5%;
+    /* border: 2px solid var(--main); */
 }
+
 
 .research-text {
     /* white-space: nowrap; */
