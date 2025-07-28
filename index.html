@@ -2,272 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Michel's Webpage</title>
+    <title>Oscar Michel</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 <body>
-        <div class="box-1">
-            <div style="margin-bottom: 50px;">
-                <img src="uchicago.png" width="10%" style="float: right;">
-                <img src="ai2.png" width="10%" style="float: right;">
-                <img src="nyu.png" width="7%" style="float: right;">
-                <h1>Oscar Michel's Webpage</h1>
+    <!-- Header Section with Photo and Bio -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <img src="me4.jpeg" alt="Oscar Michel" class="profile-photo">
             </div>
-
-
-            <div class="box-2">
-                <div class="box-2-element" style="padding-top: 5%;"><img src="me4.jpeg" class="image"></div>
-                    <div class="box-2-element" style="flex: 2;">
-                        <h2>About Me</h2>
-                        <p>I am first year PhD student at NYU Courant advised by Prof. Saining Xie. My research is in computer vision and AI.</p>
-                        <p>Previously, I was a predoctoral researcher at the Allen Institute for AI working primarily with Dr. Tanmay Gupta and Dr. Ani Kembhavi.</p>
-                        <p>Before that I was an undergraduate at the University of Chicago, where I received a degree in mathematics. There I was fortunate to work with Prof. Rana Hanocka and Prof. Michael Maire.</p>
-                        
-                    </div>
-                <div class="box-2-element">
-                    <h2> Contact </h2>
-                        <ul>
-                            <li>
-                                <a class="contact" href="mailto:micheloscar20@gmail.com">Email</a>
-                            </li>
-                            <li>
-                                <a class="contact" href="https://scholar.google.com/citations?user=zczXAk8AAAAJ&hl=en&oi=ao">Google Scholar</a>
-                            </li>
-                            <li>
-                                <a class="contact" href="https://github.com/ojmichel">GitHub</a>
-                            </li>
-                            <li>
-                                <a class="contact" href="https://www.linkedin.com/in/oscar-michel-82a162145/">LinkedIn</a>
-                            </li>
-                        </ul>
-
-
+            <div class="header-right">
+                <h1>Oscar Michel</h1>
+                <p class="bio">
+                    I am first year PhD student at NYU Courant advised by Prof. Saining Xie. My research is in computer vision and AI.
+                </p>
+                <p class="bio">
+                    Previously, I was a predoctoral researcher at the Allen Institute for AI working primarily with Dr. Tanmay Gupta and Dr. Ani Kembhavi.
+                </p>
+                <p class="bio">
+                    Before that I was an undergraduate at the University of Chicago, where I received a degree in mathematics. There I was fortunate to work with Prof. Rana Hanocka and Prof. Michael Maire.
+                </p>
+                <div class="affiliations">
+                    <img src="nyu.png" alt="NYU" class="affiliation-logo">
+                    <img src="ai2.png" alt="Allen Institute for AI" class="affiliation-logo">
+                    <img src="uchicago.png" alt="University of Chicago" class="affiliation-logo">
                 </div>
-
             </div>
-                <h1>
-                    Publications & Preprints
-                </h1>
-                <table>
-                    <tr></tr>
-                        <td><img src="mmolmo.png" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b><i>Molmo and PixMo</i>: Open Weights and Open Data for State-of-the-Art Multimodal Models</b><br>
-                                    Matt Deitke, Chirstopher Clark, et al.<br>
-                                    Technical report 2024 <br><br>
-                                    A family of open multimodal models that are as good as the best commerical ones. My contribution was creating a novel evaluation benchmark for testing fine-grained world knowledge in VQA.  
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://arxiv.org/abs/2406.11775">Arxiv<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://www.task-me-anything.org/">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://github.com/JieyuZ2/TaskMeAnything">Code</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:JZufGoZ2GgsJ:scholar.google.com/&output=citation&scisdr=ClHSHeTeEIu4qkOvmzU:AFWwaeYAAAAAZvSpgzV5emuHp3RVxCxWeJKv6Us&scisig=AFWwaeYAAAAAZvSpg07AZoK4EUSDEpTfAtEyr7I&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    <tr>
-                        <td><img src="tma.png" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b>Task Me Anything</b><br>
-                                    Jieyu Zhang, Weikai Huang, Zixian Ma, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna<br>
-                                    NeurIPS Datasets & Benchmarks 2024 <br><br>
-                                    A new way of thinking about how we can evaluate models using synthetic visual data.
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://molmo.allenai.org/paper.pdf">Paper<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://molmo.allenai.org/blog">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19">Models</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://molmo.allenai.org/">Demo</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="3dit.gif" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b>OBJect 3DIT: Language-guided 3D-aware Image Editing</b><br>
-                                    Oscar Michel, Anand Bhattad, Eli VanderBilt, Ranjay Krishna, Ani Kembhavi, Tanmay Gupta<br>
-                                    NeurIPS 2023 <br><br>
-                                   Using synthetic data to give diffusion models intutitive controls that enable geometrically accurate 3D manipulations of objects in images.
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="http://arxiv.org/abs/2307.11073">Arxiv<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://prior.allenai.org/projects/object-edit">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://github.com/allenai/object-edit">Code</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:g0nKc6oHGMYJ:scholar.google.com/&output=citation&scisdr=ClHSHeTeEIu4qkOvheg:AFWwaeYAAAAAZvSpnej4slcrbqi_FYEnR0Xpcmk&scisig=AFWwaeYAAAAAZvSpnXAuqK0f37xx7JCinB8dPEQ&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="objaverse_xl.png" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b>Objaverse-XL: A Universe of 10M+ 3D Objects
-                                    </b><br>
-                                    Matt Deitke, Ruoshi Liu, Matthew Wallingford, Huong Ngo, Oscar Michel, Aditya Kusupati, Alan Fan, Christian Laforte, Vikram Voleti, Samir Yitzhak Gadr, Eli VanderBilt, Aniruddha Kembhavi, Carl Vondrick, Georgia Gkioxari, Kiana Ehsani, Ludwig Schmidt, Ali Farhadi<br>
-                                    NeurIPS Datasets & Benchmarks 2023 <br><br>
-                                   A dataset 10x the scale of Objaverse 1.0 and a 3D object reconstruction foundation model.
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://arxiv.org/abs/2307.05663">Arxiv<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://objaverse.allenai.org/">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:IjK6rHxSo_kJ:scholar.google.com/&output=citation&scisdr=ChUnITo9EN6N_iIN3-c:ABFrs3wAAAAAZLoLx-e_eUd7skELaOe5L-GpNbQ&scisig=ABFrs3wAAAAAZLoLx92vaXqEDLg9fnmdFyz6BMk&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="objaverse.png" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b>Objaverse: A Universe of Annotated 3D Objects</b><br>
-                                    Matt Deitke, Dustin Schwenk, Jordi Salvador, Luca Weihs, Oscar Michel, Eli VanderBilt, Ludwig Schmidt, Kiana Ehsani, Aniruddha Kembhavi, Ali Farhadi<br>
-                                    CVPR 2023 <br><br>
-                                   Objaverse is a large dataset of 800k+ 3D models.
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://arxiv.org/abs/2212.08051">Arxiv<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://objaverse.allenai.org/">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://colab.research.google.com/drive/1ZLA4QufsiI_RuNlamKqV7D7mn40FbWoY?usp=sharing">Colab</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:TqZ8T8ei7JQJ:scholar.google.com/&output=citation&scisdr=CgXN7Cs9EN6N-Wx0GoI:AAGBfm0AAAAAY_RyAoITO0fJwhVvTPqnoc11lhGSdVwv&scisig=AAGBfm0AAAAAY_RyAiCmfjt2mxCN_wOn_n2TmJAmXAdC&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="t2m.png" class="image-research"></td>
-                        <td>
-                            <div class="research-text">
-                                <p>
-                                    <b>Text2Mesh: Text-Driven Neural Stylization for Meshes</b><br>
-                                    Oscar Michel<sup>*</sup>, Roi Bar On<sup>*</sup>, Richard Liu<sup>*</sup>, Sagie Benaim, Rana Hanocka<br>
-                                    CVPR 2022 <b>(Oral)</b><br><br>
-                                    Text2Mesh is an algorithm for language guided stylization of a 3D object.
-                                </p>
-                                <ul>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://arxiv.org/abs/2112.03221">Arxiv<a>
-                                    </li >
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://threedle.github.io/text2mesh/">Page</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://github.com/threedle/text2mesh/">Code</a>
-                                    </li>
-                                    <li class="paper-li">
-                                        <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:qsePEd68T1YJ:scholar.google.com/&output=citation&scisdr=CgXjsOABEN2p7phwoN8:AAGBfm0AAAAAYhR2uN91QNB0MQiq2Hlns40lBaWi3PI0&scisig=AAGBfm0AAAAAYhR2uEAX3G0Fa_aOc4wRkuk-9b5y4Ieo&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                                    </li>
-                                </ul>
-        
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <!-- <div class="research-box">
-                    <div style="aspect-ratio: 1;"><img src="t2m.png" class="image-research"></div>
-                    <div class="research-text">
-                        <p>
-                            <b>Objaverse: A Universe of Annotated 3D Objects</b><br>
-                            Matt Deitke, Dustin Schwenk, Jordi Salvador, Luca Weihs, Oscar Michel, Eli VanderBilt, Ludwid Schmidt, Kiana Ehsani, Aniruddha Kembhavi, Ali Farhadi
-                            Arxiv 2022 <br><br>
-                           Objaverse is a large dataset of 800k+ 3D models.
-                        </p>
-                        <ul>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://arxiv.org/abs/2112.03221">Arxiv<a>
-                            </li >
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://threedle.github.io/text2mesh/">Page</a>
-                            </li>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://github.com/threedle/text2mesh/">Code</a>
-                            </li>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:qsePEd68T1YJ:scholar.google.com/&output=citation&scisdr=CgXjsOABEN2p7phwoN8:AAGBfm0AAAAAYhR2uN91QNB0MQiq2Hlns40lBaWi3PI0&scisig=AAGBfm0AAAAAYhR2uEAX3G0Fa_aOc4wRkuk-9b5y4Ieo&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="research-box">
-                    <div style="aspect-ratio: 1;"><img src="t2m.png" class="image-research"></div>
-                    <div class="research-text">
-                        <p>
-                            <b>Text2Mesh: Text-Driven Neural Stylization for Meshes</b><br>
-                            Oscar Michel<sup>*</sup>, Roi Bar On<sup>*</sup>, Richard Liu<sup>*</sup>, Sagie Benaim, Rana Hanocka<br>
-                            CVPR 2022 <b>(Oral)</b><br><br>
-                            We achieve language driven stylization of a 3D object by encoding color and geometric displacements over the object’s surface with a neural network. A differential renderer enables training the network to produce a style that has similar CLIP embeddings to the text prompt.
-                        </p>
-                        <ul>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://arxiv.org/abs/2112.03221">Arxiv<a>
-                            </li >
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://threedle.github.io/text2mesh/">Page</a>
-                            </li>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://github.com/threedle/text2mesh/">Code</a>
-                            </li>
-                            <li class="paper-li">
-                                <a class="paper-link" href="https://scholar.googleusercontent.com/scholar.bib?q=info:qsePEd68T1YJ:scholar.google.com/&output=citation&scisdr=CgXjsOABEN2p7phwoN8:AAGBfm0AAAAAYhR2uN91QNB0MQiq2Hlns40lBaWi3PI0&scisig=AAGBfm0AAAAAYhR2uEAX3G0Fa_aOc4wRkuk-9b5y4Ieo&scisf=4&ct=citation&cd=-1&hl=en">BibTex</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div> -->
-
-
         </div>
-        
+    </header>
+
+    <!-- Main Content Area with Tabs -->
+    <main class="main-content">
+        <!-- Manila Folder Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-button active" data-tab="research">Research</button>
+            <button class="tab-button" data-tab="work">Work Experience</button>
+            <button class="tab-button" data-tab="misc">Miscellaneous</button>
+            <button class="tab-button" data-tab="blog">Blog</button>
+            <button class="tab-button" data-tab="contact">Contact</button>
+        </nav>
+
+        <!-- Content Window -->
+        <div class="content-window">
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Research Tab -->
+                <div id="research" class="tab-pane active">
+                    <h2>Publications & Preprints</h2>
+                    
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="mmolmo.png" alt="Molmo and PixMo">
+                        </div>
+                        <div class="research-details">
+                            <h3>Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Models</h3>
+                            <p class="authors">Matt Deitke, Christopher Clark, et al.</p>
+                            <p class="venue">Technical report 2024</p>
+                            <p class="description">
+                                A family of open multimodal models that are as good as the best commercial ones. My contribution was creating a novel evaluation benchmark for testing fine-grained world knowledge in VQA.
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2406.11775" class="paper-link">Arxiv</a>
+                                <a href="https://www.task-me-anything.org/" class="paper-link">Page</a>
+                                <a href="https://github.com/JieyuZ2/TaskMeAnything" class="paper-link">Code</a>
+                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:JZufGoZ2GgsJ:scholar.google.com/&output=citation&scisdr=ClHSHeTeEIu4qkOvmzU:AFWwaeYAAAAAZvSpgzV5emuHp3RVxCxWeJKv6Us&scisig=AFWwaeYAAAAAZvSpg07AZoK4EUSDEpTfAtEyr7I&scisf=4&ct=citation&cd=-1&hl=en" class="paper-link">BibTex</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="tma.png" alt="Task Me Anything">
+                        </div>
+                        <div class="research-details">
+                            <h3>Task Me Anything</h3>
+                            <p class="authors">Jieyu Zhang, Weikai Huang, Zixian Ma, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna</p>
+                            <p class="venue">NeurIPS Datasets & Benchmarks 2024</p>
+                            <p class="description">
+                                A new way of thinking about how we can evaluate models using synthetic visual data.
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://molmo.allenai.org/paper.pdf" class="paper-link">Paper</a>
+                                <a href="https://molmo.allenai.org/blog" class="paper-link">Page</a>
+                                <a href="https://huggingface.co/collections/allenai/molmo-66f379e6fe3b8ef090a8ca19" class="paper-link">Models</a>
+                                <a href="https://molmo.allenai.org/" class="paper-link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="3dit.gif" alt="Object 3DIT">
+                        </div>
+                        <div class="research-details">
+                            <h3>OBJect 3DIT: Language-guided 3D-aware Image Editing</h3>
+                            <p class="authors">Oscar Michel, Anand Bhattad, Eli VanderBilt, Ranjay Krishna, Ani Kembhavi, Tanmay Gupta</p>
+                            <p class="venue">NeurIPS 2023</p>
+                            <p class="description">
+                                Using synthetic data to give diffusion models intuitive controls that enable geometrically accurate 3D manipulations of objects in images.
+                            </p>
+                            <div class="paper-links">
+                                <a href="http://arxiv.org/abs/2307.11073" class="paper-link">Arxiv</a>
+                                <a href="https://prior.allenai.org/projects/object-edit" class="paper-link">Page</a>
+                                <a href="https://github.com/allenai/object-edit" class="paper-link">Code</a>
+                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:g0nKc6oHGMYJ:scholar.google.com/&output=citation&scisdr=ClHSHeTeEIu4qkOvheg:AFWwaeYAAAAAZvSpnej4slcrbqi_FYEnR0Xpcmk&scisig=AFWwaeYAAAAAZvSpnXAuqK0f37xx7JCinB8dPEQ&scisf=4&ct=citation&cd=-1&hl=en" class="paper-link">BibTex</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="objaverse_xl.png" alt="Objaverse-XL">
+                        </div>
+                        <div class="research-details">
+                            <h3>Objaverse-XL: A Universe of 10M+ 3D Objects</h3>
+                            <p class="authors">Matt Deitke, Ruoshi Liu, Matthew Wallingford, Huong Ngo, Oscar Michel, Aditya Kusupati, Alan Fan, Christian Laforte, Vikram Voleti, Samir Yitzhak Gadr, Eli VanderBilt, Aniruddha Kembhavi, Carl Vondrick, Georgia Gkioxari, Kiana Ehsani, Ludwig Schmidt, Ali Farhadi</p>
+                            <p class="venue">NeurIPS Datasets & Benchmarks 2023</p>
+                            <p class="description">
+                                A dataset 10x the scale of Objaverse 1.0 and a 3D object reconstruction foundation model.
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2307.05663" class="paper-link">Arxiv</a>
+                                <a href="https://objaverse.allenai.org/" class="paper-link">Page</a>
+                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:IjK6rHxSo_kJ:scholar.google.com/&output=citation&scisdr=ChUnITo9EN6N_iIN3-c:ABFrs3wAAAAAZLoLx-e_eUd7skELaOe5L-GpNbQ&scisig=ABFrs3wAAAAAZLoLx92vaXqEDLg9fnmdFyz6BMk&scisf=4&ct=citation&cd=-1&hl=en" class="paper-link">BibTex</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="objaverse.png" alt="Objaverse">
+                        </div>
+                        <div class="research-details">
+                            <h3>Objaverse: A Universe of Annotated 3D Objects</h3>
+                            <p class="authors">Matt Deitke, Dustin Schwenk, Jordi Salvador, Luca Weihs, Oscar Michel, Eli VanderBilt, Ludwig Schmidt, Kiana Ehsani, Aniruddha Kembhavi, Ali Farhadi</p>
+                            <p class="venue">CVPR 2023</p>
+                            <p class="description">
+                                Objaverse is a large dataset of 800k+ 3D models.
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2212.08051" class="paper-link">Arxiv</a>
+                                <a href="https://objaverse.allenai.org/" class="paper-link">Page</a>
+                                <a href="https://colab.research.google.com/drive/1ZLA4QufsiI_RuNlamKqV7D7mn40FbWoY?usp=sharing" class="paper-link">Colab</a>
+                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:TqZ8T8ei7JQJ:scholar.google.com/&output=citation&scisdr=CgXN7Cs9EN6N-Wx0GoI:AAGBfm0AAAAAY_RyAoITO0fJwhVvTPqnoc11lhGSdVwv&scisig=AAGBfm0AAAAAY_RyAiCmfjt2mxCN_wOn_n2TmJAmXAdC&scisf=4&ct=citation&cd=-1&hl=en" class="paper-link">BibTex</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-image">
+                            <img src="t2m.png" alt="Text2Mesh">
+                        </div>
+                        <div class="research-details">
+                            <h3>Text2Mesh: Text-Driven Neural Stylization for Meshes</h3>
+                            <p class="authors">Oscar Michel*, Roi Bar On*, Richard Liu*, Sagie Benaim, Rana Hanocka</p>
+                            <p class="venue">CVPR 2022 <strong>(Oral)</strong></p>
+                            <p class="description">
+                                Text2Mesh is an algorithm for language guided stylization of a 3D object.
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2112.03221" class="paper-link">Arxiv</a>
+                                <a href="https://threedle.github.io/text2mesh/" class="paper-link">Page</a>
+                                <a href="https://github.com/threedle/text2mesh/" class="paper-link">Code</a>
+                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:qsePEd68T1YJ:scholar.google.com/&output=citation&scisdr=CgXjsOABEN2p7phwoN8:AAGBfm0AAAAAYhR2uN91QNB0MQiq2Hlns40lBaWi3PI0&scisig=AAGBfm0AAAAAYhR2uEAX3G0Fa_aOc4wRkuk-9b5y4Ieo&scisf=4&ct=citation&cd=-1&hl=en" class="paper-link">BibTex</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience Tab -->
+                <div id="work" class="tab-pane">
+                    <h2>Work Experience</h2>
+                    <p>Content coming soon...</p>
+                </div>
+
+                <!-- Miscellaneous Tab -->
+                <div id="misc" class="tab-pane">
+                    <h2>Miscellaneous</h2>
+                    <p>Content coming soon...</p>
+                </div>
+
+                <!-- Blog Tab -->
+                <div id="blog" class="tab-pane">
+                    <h2>Blog</h2>
+                    <p>Content coming soon...</p>
+                </div>
+
+                <!-- Contact Tab -->
+                <div id="contact" class="tab-pane">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <ul>
+                            <li><a href="mailto:micheloscar20@gmail.com">Email</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=zczXAk8AAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+                            <li><a href="https://github.com/ojmichel">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/oscar-michel-82a162145/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
