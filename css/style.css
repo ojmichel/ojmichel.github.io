@@ -1,7 +1,7 @@
 /* CSS Custom Properties for consistent theming */
 :root {
     /* Color Palette - Warm Paper Theme */
-    --bg-primary: #f7f5f1;
+    --bg-primary: #e8e2dc;
     --bg-secondary: #ede8e3;
     --bg-content: #fafaf8;
     --text-primary: #3c3835;
@@ -36,26 +36,6 @@ body {
     line-height: 1.3;
     font-size: 13px;
     
-    /* Realistic paper texture - fiber-like grain */
-    background-image: 
-        /* Horizontal paper fibers */
-        linear-gradient(90deg, transparent 0%, rgba(212, 200, 184, 0.4) 50%, transparent 100%),
-        linear-gradient(90deg, transparent 0%, rgba(224, 212, 196, 0.3) 50%, transparent 100%),
-        linear-gradient(90deg, transparent 0%, rgba(200, 188, 172, 0.3) 50%, transparent 100%),
-        /* Vertical paper fibers */
-        linear-gradient(0deg, transparent 0%, rgba(216, 204, 188, 0.3) 50%, transparent 100%),
-        linear-gradient(0deg, transparent 0%, rgba(208, 196, 180, 0.2) 50%, transparent 100%),
-        /* Subtle noise for texture */
-        repeating-linear-gradient(45deg, rgba(200, 188, 172, 0.1) 0px, transparent 1px, rgba(224, 212, 196, 0.1) 2px);
-    background-size: 
-        40px 2px, 60px 1px, 80px 1px,
-        2px 50px, 1px 70px,
-        3px 3px;
-    background-position:
-        0 20%, 0 40%, 0 80%,
-        30% 0, 70% 0,
-        0 0;
-    
     min-height: 100vh;
     padding: 1rem;
 }
@@ -64,17 +44,13 @@ body {
 .header {
     max-width: 1000px;
     margin: 0 auto 1.5rem auto;
-    background: var(--bg-primary);
+    background: var(--bg-content);
     border: 1px solid var(--border-color);
     border-radius: 6px;
     box-shadow: 0 2px 8px var(--shadow-color);
     overflow: hidden;
     
-    /* Paper texture for header */
-    background-image: 
-        linear-gradient(90deg, transparent 0%, rgba(212, 200, 184, 0.2) 50%, transparent 100%),
-        linear-gradient(0deg, transparent 0%, rgba(216, 204, 188, 0.2) 50%, transparent 100%);
-    background-size: 35px 1px, 1px 45px;
+ 
 }
 
 .header-content {
@@ -166,11 +142,7 @@ body {
     text-align: left;
     box-shadow: -1px 1px 3px var(--folder-tab-shadow);
     
-    /* Manila folder tab effect */
-    background-image: 
-        linear-gradient(90deg, transparent 0%, rgba(212, 200, 184, 0.3) 50%, transparent 100%),
-        linear-gradient(0deg, transparent 0%, rgba(216, 204, 188, 0.2) 50%, transparent 100%);
-    background-size: 20px 1px, 1px 25px;
+
 }
 
 .tab-button::before {
@@ -221,11 +193,7 @@ body {
     overflow: hidden;
     min-height: 400px;
     
-    /* Paper texture for content area */
-    background-image: 
-        linear-gradient(90deg, transparent 0%, rgba(212, 200, 184, 0.15) 50%, transparent 100%),
-        linear-gradient(0deg, transparent 0%, rgba(216, 204, 188, 0.15) 50%, transparent 100%);
-    background-size: 30px 1px, 1px 40px;
+
 }
 
 /* Tab Content */
