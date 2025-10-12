@@ -132,3 +132,30 @@
     /* align-items: flex-start; */
     
 }
+
+.awards-section {
+    margin-bottom: 30px;
+}
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.award-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--body);
+    border: 1px solid var(--main);
+    border-radius: 5px;
+    color: var(--main);
+}
+
+.award-item strong {
+    color: var(--main);
+}
+
+.award-item em {
+    color: var(--main);
+    font-style: italic;
+}
